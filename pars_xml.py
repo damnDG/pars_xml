@@ -3,7 +3,7 @@ import csv
 
 def record_file(name_file, tree):
     all_data = []
-    data_tags = [i for i in input().split()]  # первым вводите id
+    data_tags = [i for i in input('Enter tags and first ID: ').split()]  # первым вводите id
     with open(name_file, 'w', newline='', encoding='utf - 8 - sig') as f:
         writer = csv.writer(f) # создание объекта csv для записи
         writer.writerow(data_tags) # запись в первую строку наименований столбцов
